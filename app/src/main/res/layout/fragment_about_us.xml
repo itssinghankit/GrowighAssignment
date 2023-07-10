@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.onboarding.FragmentAboutUs">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:backgroundTint="@color/white"
+            android:text="Skip Intro"
+            android:textAllCaps="false"
+            android:textColor="@color/lightblue"
+            app:cornerRadius="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/lightblue"
+            app:strokeWidth="@dimen/_1sdp" />
+
+        <ImageView
+            android:id="@+id/cen_img"
+            android:layout_width="@dimen/_204sdp"
+            android:layout_height="@dimen/_197sdp"
+            android:layout_marginTop="@dimen/_47sdp"
+            android:src="@drawable/aboutus_vector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/skip_btn" />
+
+        <ImageView
+            android:id="@+id/cen_txt_area"
+            android:layout_width="@dimen/_263sdp"
+            android:layout_height="@dimen/_290sdp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="@dimen/_47sdp"
+            android:background="@drawable/onboard_scr_gradient"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cen_img" />
+
+        <TextView
+            android:id="@+id/abt_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19sdp"
+            android:layout_marginTop="@dimen/_47sdp"
+            android:fontFamily="@font/noto_sans"
+            android:letterSpacing="-0.01"
+            android:text="About Us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25ssp"
+            app:layout_constraintStart_toStartOf="@id/cen_txt_area"
+            app:layout_constraintTop_toTopOf="@id/cen_txt_area" />
+
+        <TextView
+            android:id="@+id/abt_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_19sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/manrope_medium"
+            android:letterSpacing="-0.01"
+            android:maxLines="7"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            android:textColor="@color/txtblue"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@id/cen_txt_area"
+            app:layout_constraintStart_toStartOf="@id/cen_txt_area"
+            app:layout_constraintTop_toBottomOf="@id/abt_head"
+            app:layout_goneMarginStart="@dimen/_19sdp" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_63sdp"
+            android:layout_marginTop="@dimen/_47sdp"
+            android:src="@drawable/aboutus_progres_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/abt_txt" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

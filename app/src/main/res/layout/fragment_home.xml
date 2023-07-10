@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FragmentHome"
+    android:background="@color/white">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/cen_img"
+        android:layout_width="@dimen/_204sdp"
+        android:layout_height="@dimen/_197sdp"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/home_vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noto_sans"
+        android:text="Welcome Ankit"
+        android:id="@+id/wlcm_txt"
+        android:textColor="@color/txtblack"
+        android:textSize="@dimen/_25ssp"
+        app:layout_constraintTop_toBottomOf="@id/cen_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_25sdp"/>
+
+    <ImageButton
+        android:id="@+id/feeds"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_height="@dimen/_57sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/home_btn_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wlcm_txt"/>
+
+    <ImageButton
+        android:id="@+id/upld_img"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_height="@dimen/_57sdp"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:layout_marginBottom="@dimen/_47sdp"
+        android:background="@drawable/home_btn_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feeds"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Feeds"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@id/feeds"
+        app:layout_constraintEnd_toEndOf="@id/feeds"
+        app:layout_constraintStart_toStartOf="@id/feeds"
+        app:layout_constraintTop_toTopOf="@id/feeds" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Upload Image"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@id/upld_img"
+        app:layout_constraintEnd_toEndOf="@id/upld_img"
+        app:layout_constraintStart_toStartOf="@id/upld_img"
+        app:layout_constraintTop_toTopOf="@id/upld_img" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
